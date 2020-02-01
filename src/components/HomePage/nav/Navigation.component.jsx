@@ -6,13 +6,10 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Container
+  NavLink
 } from "reactstrap";
+
+import { Link } from "react-scroll";
 
 import styled from "styled-components";
 
@@ -22,32 +19,39 @@ const WrapHeader = styled.div`
   left: 0;
   width: 100%;
   z-index: 400;
+  @media (max-width: 1199.98px) {
+    .hidden {
+      display: none;
+    }
+    .nav-now-centered {
+    }
+  }
 `;
-const MenuItem = styled(NavItem)`
-  margin-right: 30px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 0;
+const Menu = styled(Nav)`
+  @media (max-width: 750px) {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 86%;
+    border-radius: 10px;
+  }
+`;
+const MenuLink = styled(NavLink)`
+  &:hover {
+    border-bottom: 2px solid rgb(204, 189, 153);
+  }
+  font-family: "Lato";
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #fff !important;
+  text-decoration: none;
+  display: block;
+  margin-left: 3px;
 `;
 
-const MenuLink = styled(NavLink)`
-  font-family: "Lato";
-  font-size: 20px;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #fff !important;
-  text-decoration: none;
-  display: block;
-`;
-const MenuDropdown = styled(DropdownToggle)`
-  font-family: "Lato";
-  font-size: 20px;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #fff !important;
-  text-decoration: none;
-  display: block;
-`;
 const SiteName = styled(NavbarBrand)`
   font-family: "Prata";
   font-size: 20px;
@@ -66,35 +70,41 @@ const Navigation = props => {
   return (
     <WrapHeader>
       <Navbar light expand="md" className="my-2">
-        <SiteName href="/">DC Home Ownership</SiteName>
+        <div className="hidden">
+          <SiteName>Home Ownership In DC</SiteName>
+        </div>
         <NavbarToggler onClick={toggle} style={{ backgroundColor: "#FFF" }} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar></Nav>
+          <Nav className="hidden mr-auto" navbar></Nav>
 
-          <Nav navbar>
+          <Menu className="mx-auto">
             <NavItem>
-              <MenuLink href="/components/">About</MenuLink>
+              <Link to="purpose" spy={true} smooth={true} duration={500}>
+                <MenuLink>About</MenuLink>
+              </Link>
             </NavItem>
             <NavItem>
-              <MenuLink href="https://github.com/reactstrap/reactstrap">
-                Eligibility
-              </MenuLink>
+              <Link to="involved" spy={true} smooth={true} duration={500}>
+                <MenuLink href="#myTarget">What is Involved?</MenuLink>
+              </Link>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <MenuDropdown nav caret>
-                FQA
-              </MenuDropdown>
-              <DropdownMenu right>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Reset</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
             <NavItem>
-              <MenuLink href="/components/">Benefits</MenuLink>
+              <Link to="eligibile" spy={true} smooth={true} duration={500}>
+                <MenuLink href="#myTarget">Are you Eligibile?</MenuLink>
+              </Link>
             </NavItem>
-          </Nav>
+            <NavItem>
+              <Link to="questions" spy={true} smooth={true} duration={500}>
+                <MenuLink href="#myTarget">Common Questions</MenuLink>
+              </Link>
+            </NavItem>
+
+            <NavItem>
+              <Link to="contact" spy={true} smooth={true} duration={500}>
+                <MenuLink href="#contact">Contact</MenuLink>
+              </Link>
+            </NavItem>
+          </Menu>
         </Collapse>
       </Navbar>
     </WrapHeader>
