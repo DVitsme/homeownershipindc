@@ -12,7 +12,7 @@ const TableWards = props => {
         <thead>
           <tr>
             {TableData.Header.map((title, index) => (
-              <TableHeader key={title[index]} header={title} />
+              <TableHeader key={index} header={title} />
             ))}
           </tr>
         </thead>

@@ -9,9 +9,8 @@ import {
   NavLink
 } from "reactstrap";
 
-import { Link } from "react-scroll";
-
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 const WrapHeader = styled.div`
   position: absolute;
@@ -28,6 +27,9 @@ const WrapHeader = styled.div`
   }
 `;
 const Menu = styled(Nav)`
+  @media (max-width: 1199.98px) {
+    margin-right: 0;
+  }
   @media (max-width: 750px) {
     flex-direction: column;
     position: absolute;
@@ -50,6 +52,7 @@ const MenuLink = styled(NavLink)`
   text-decoration: none;
   display: block;
   margin-left: 3px;
+  cursor: pointer;
 `;
 
 const SiteName = styled(NavbarBrand)`
@@ -77,7 +80,7 @@ const Navigation = props => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="hidden mr-auto" navbar></Nav>
 
-          <Menu className="mx-auto">
+          <Menu>
             <NavItem>
               <Link to="purpose" spy={true} smooth={true} duration={500}>
                 <MenuLink>About</MenuLink>

@@ -1,0 +1,266 @@
+{
+  "sectionTitle": [
+    {
+      "jsonTitle": "aboutYou",
+      "displayTitle": "About You",
+      "subTitle": null
+    },
+    {
+      "jsonTitle": "yourHousehold",
+      "displayTitle": "Your Household",
+      "subTitle": "Income and wealth"
+    },
+    {
+      "jsonTitle": "yourNeighborhood",
+      "displayTitle": "Your Neighborhood",
+      "subTitle": null
+    },
+    {
+      "jsonTitle": "yourNeighbors",
+      "displayTitle": "Your Neighborhors",
+      "subTitle": "During the past six month how often have you and any of your neighbors done any of the following:"
+    }
+  ],
+  "aboutYou": [
+    {
+      "name": "Name",
+      "type": "input",
+      "placeholder": "Enter Your Name"
+    },
+    {
+      "name": "Street Address",
+      "type": "input",
+      "placeholder": "Enter Your Street Address"
+    },
+    {
+      "name": "Zip Code",
+      "type": "input",
+      "placeholder": "Enter Your Zip Code"
+    },
+
+    {
+      "name": "Current employment status",
+      "type": "radio",
+      "options": [
+        "Working full time",
+        "Working part time",
+        "Retired",
+        "Unemployed"
+      ]
+    },
+    {
+      "name": "Highest level of education completed",
+      "type": "radio",
+      "options": [
+        "9th to 12th grade, no diploma",
+        "High school graduate (includes equivalency)",
+        "Some college, no degree",
+        "Associate's degree",
+        "Bachelor's degree",
+        "Graduate or professional degree"
+      ]
+    },
+    {
+      "name": "Where you born in Washington DC?",
+      "type": "checkbox"
+    }
+  ],
+  "yourNeighborhood": [
+    {
+      "name": "Some people feel their neighborhood is a real home to them, while other people feel their neighborhood is just a place where they happen to live. Which one of these views comes closest to the way you feel about your own neighborhood?",
+      "type": "radio",
+      "options": ["Just a place to live", "A real home"]
+    },
+    {
+      "name": "How strong would you say your ties to the neighborhood are? 1 (Not Strong At All) - 5 (Very Strong)",
+      "type": "radio",
+      "options": ["1", "2", "3", "4", "5"]
+    },
+    {
+      "name": "If you had to move, how much would you miss your neighborhood?",
+      "type": "radio",
+      "options": [
+        "Not very much",
+        "Just a little",
+        "Somewhat",
+        "Quite a bit",
+        "Don't know"
+      ]
+    },
+    {
+      "name": "Suppose a family had saved its money and was thinking about buying a home in your neighborhood. In your opinion, would they be making a good financial investment buying there, or would they be better off investing their money elsewhere in DC? Or MD/VA?",
+      "type": "radio",
+      "options": [
+        "This neighborhood is a good investment",
+        "Better off in a different part of DC",
+        "Better off in MD or VA",
+        "Quite a bit",
+        "Don't know"
+      ]
+    },
+    {
+      "name": "How would you rate your neighborhood? 1 (Poor) - 5 (Excellent)",
+      "type": "radio",
+      "options": ["1", "2", "3", "4", "5"]
+    },
+    {
+      "name": "About how many of your nearest neighbors - the people living in the eight or nine homes closest to yours on the street or in your building - do you happen to know by name?",
+      "type": "radio",
+      "options": [
+        "None of them",
+        "A few of them",
+        "About half of them",
+        "Most of them",
+        "All of them"
+      ]
+    }
+  ],
+  "yourNeighbors": [
+    {
+      "name": "Said hello or stopped to speak?",
+      "type": "radio",
+      "options": [
+        "Never",
+        "A few times",
+        "Once or twice a month",
+        "Once or twice a week",
+        "Almost every day"
+      ]
+    },
+    {
+      "name": "Had a talk longer than ten minutes?",
+      "type": "radio",
+      "options": [
+        "Never",
+        "A few times",
+        "Once or twice a month",
+        "Once or twice a week",
+        "Almost every day"
+      ]
+    },
+    {
+      "name": "Borrowed something small like a cup of sugar?",
+      "type": "radio",
+      "options": [
+        "Never",
+        "A few times",
+        "Once or twice a month",
+        "Once or twice a week",
+        "Almost every day"
+      ]
+    },
+    {
+      "name": "Gave each other a helping hand (shoveling snow, home repairs, lawn work, etc.)?",
+      "type": "radio",
+      "options": [
+        "Never",
+        "A few times",
+        "Once or twice a month",
+        "Once or twice a week",
+        "Almost every day"
+      ]
+    },
+    {
+      "name": "Have you discuss important personal matters such as divorce, change in jobs, etc with any of your neighbors?",
+      "type": "radio",
+      "options": [
+        "Never",
+        "A few times",
+        "Once or twice a month",
+        "Once or twice a week",
+        "Almost every day"
+      ]
+    },
+    {
+      "name": "Invited each other over for dinner, drinks or a movie at home?",
+      "type": "radio",
+      "options": [
+        "Never",
+        "A few times",
+        "Once or twice a month",
+        "Once or twice a week",
+        "Almost every day"
+      ]
+    },
+    {
+      "name": "Got together socially outside of the neighborhood?",
+      "type": "radio",
+      "options": [
+        "Never",
+        "A few times",
+        "Once or twice a month",
+        "Once or twice a week",
+        "Almost every day"
+      ]
+    }
+  ],
+  "yourHousehold": [
+    {
+      "name": "What is your household income in the past 12 months?",
+      "type": "radio",
+      "options": [
+        "Less than $25,000",
+        "$25,000 to $50,000",
+        "$50,000 to $75,000",
+        "$75,000 to $100,000",
+        "$100,000 to $150,000",
+        "$150,000 to $200,000",
+        "More than $200,000"
+      ]
+    },
+    {
+      "name": "Year home was purchased?",
+      "type": "number",
+      "placeholder": "Year home was purchased"
+    },
+    {
+      "name": "The current value of your home?",
+      "type": "number",
+      "placeholder": "The current value of your home"
+    },
+    {
+      "name": "The current value of all assets excluding your home?",
+      "type": "radio",
+      "options": [
+        "Less than $25,000",
+        "$25,000 to $50,000",
+        "$50,000 to $75,000",
+        "$75,000 to $100,000",
+        "$100,000 to $150,000",
+        "$150,000 to $200,000",
+        "More than $200,000"
+      ]
+    },
+    {
+      "name": "Outstanding debt (including mortgage, educational loans, credit card balance, health care, car loan, etc.)?",
+      "type": "radio",
+      "options": [
+        "Less than $25,000",
+        "$25,000 to $50,000",
+        "$50,000 to $75,000",
+        "$75,000 to $100,000",
+        "$100,000 to $150,000",
+        "$150,000 to $200,000",
+        "More than $200,000"
+      ]
+    },
+    {
+      "name": "On a scale of 1 (Not at all satisfied) to 10 (Very satisfied), how satisfied are you with your net worth?",
+      "type": "radio",
+      "options": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    },
+    {
+      "name": "  Do you think any of the following have impacted your net worth (please check all that apply)?",
+      "type": "checkbox",
+      "switches": [
+        "Fluctuation in income",
+        "Mortgage discrimination",
+        "Structural racism",
+        "Discrimination in the workplace",
+        "Home valuation",
+        "Emergency situations",
+        "None of these"
+      ]
+    }
+  ]
+}

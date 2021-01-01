@@ -19,6 +19,10 @@ const Text = styled.h2`
   }
 `;
 
+/*
+ * @param {string} props.content
+ */
+
 const Title = props => {
   return <Text>{props.content}</Text>;
 };

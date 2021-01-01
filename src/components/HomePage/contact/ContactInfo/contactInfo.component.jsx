@@ -44,7 +44,7 @@ const ContactInfo = () => {
                 */}
 
         <Content>
-          <span>Phone:</span>(240) 424 - 5658{" "}
+          <span>Phone:</span>(240) 401 - 8975{" "}
         </Content>
         <Content>
           <span>Email:</span>Dawn.Valentine@waldenu.edu
